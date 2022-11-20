@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RTorresSemana6.VentanaIngreso"  NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+                <Label Text="Ventana de Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ingrese el codigo" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtCodigo" Placeholder="Codigo" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Ingresar el nombre" FontSize="Medium" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Ingresar el apellido " FontSize="Medium" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtApeliido" Placeholder="Apeliido" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Ingresar su edad " FontSize="Medium" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtEdad" Placeholder="Edad" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+
+
+                <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked"  Grid.Row="4" Grid.Column="0"/>
+                <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked"   Grid.Row="5" Grid.Column="0"/>
+                <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked"   Grid.Row="6" Grid.Column="0"/>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
